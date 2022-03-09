@@ -3,11 +3,10 @@
     $parolaVietata = $_GET['parolaVietata'];
 
     // testo 
-    $testo = "Vincere non è importante è l'unica cosa che conta";
-
+    $testo = "Vincere non è importante ... è l'unica cosa che conta. Non importa se vinci di un chilometro o di un centimetro... l'importante è vincere ..";
 
     //testo filtrato
-    $testoFiltrato= str_replace($parolaVietata, '***',$testo);
+    $testoFiltrato= str_Ireplace($parolaVietata, '***',$testo);
 
 
 ?>
