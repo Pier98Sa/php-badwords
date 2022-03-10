@@ -4,9 +4,13 @@
 
     // testo 
     $testo = "Vincere non è importante ... è l'unica cosa che conta. Non importa se vinci di un chilometro o di un centimetro... l'importante è vincere ..";
+    // lunghezza del testo
+    $lunghezzaTesto = strlen($testo);
 
     //testo filtrato
     $testoFiltrato= str_Ireplace($parolaVietata, '***',$testo);
+    // lunghezza testo filtrato
+    $lunghezzaTestoFiltrato = strlen($testoFiltrato);
 
 
 ?>
@@ -23,10 +27,10 @@
 <body>
     <h1>Testo</h1>
     <p><?php echo $testo; ?></p>
-    <p>il testo ha: <?php echo strlen($testo); ?> caratteri</p>
+    <p>il testo ha: <?php echo $lunghezzaTesto; ?> caratteri</p>
 
     <h1>Testo filtrato</h1>
     <p><?php echo $testoFiltrato; ?></p>
-    <p>il testo filtrato ha: <?php echo strlen($testoFiltrato); ?> caratteri</p>
+    <p>il testo filtrato ha: <?php echo $lunghezzaTestoFiltrato; ?> caratteri</p>
 </body>
 </html>
